@@ -5,7 +5,7 @@ Developers are often tasked with creating interfaces that make it easy for non-d
 <img width="472" alt="Screen Shot 2021-01-03 at 1 16 10 AM" src="https://user-images.githubusercontent.com/25594179/103475423-da072580-4d61-11eb-9804-6bd91051f0c5.png">
 
 ## Employee Tracker Preview
-<iframe src="https://drive.google.com/file/d/17QVlynBLYVNMqk0UteHtShXNDDpa_Brm/preview" width="640" height="480"></iframe>
+![EmployeeTracker (1)](https://user-images.githubusercontent.com/25594179/103485396-cb912c00-4daa-11eb-9ddc-5285afe96175.gif)
 
 ## License 
 
