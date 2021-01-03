@@ -27,4 +27,4 @@ class Database {
     }
   }
   
-  module.exports = dataBase;
+  module.exports = Database;
