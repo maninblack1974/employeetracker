@@ -1,6 +1,4 @@
-const prompt = require("inquirer");
-const Database = require("./db");
-const cTable = require("console.table");
+const inquirer = require("inquirer");
 
 function mainPrompt() {
     return inquirer
@@ -217,3 +215,5 @@ process.on("exit", async function(code) {
     await db.close();
     return console.log(`About to exit with code ${code}`);
 });
+
+main();
