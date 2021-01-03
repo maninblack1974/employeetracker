@@ -176,15 +176,15 @@ async function mainPrompt() {
                 message: "What would you like to do?",
                 name: "action",
                 choices: [
-                  "Add department",
-                  "Add employee",
-                  "Add role",
-                  "Remove employee",
-                  "Update employee role",
                   "View all departments",
                   "View all employees",
                   "View all employees by department",
                   "View all roles",
+                  "Add department",
+                  "Add employee",
+                  "Add role",
+                  "Update employee role",
+                  "Remove employee",
                   "Exit"
                 ]
             }
