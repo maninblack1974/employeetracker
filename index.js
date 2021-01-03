@@ -96,7 +96,7 @@ async function viewAllDepartments() {
 
 async function viewAllEmployees() {
     console.log("");
-    let query = "SELECT * FROM employee";
+    let query = "SELECT employee.first_name AS First_Name, employee.last_name AS Last_Name, role.title AS Title, department.name AS Department, role.salary AS Salary, CONCAT(employee2.first_name, ' ', employee2.last_name) AS Manager FROM employee INNER JOIN role on role.id = employee.role_id INNER JOIN department on department.id = role.department_id LEFT JOIN employee employee2 on employee.manager_id = employee2.id";
     const rows = await db.query(query);
     console.table(rows);
 }
@@ -315,15 +315,12 @@ async function main() {
 
             case 'Add employee': {
                 const newEmployee = await getAddEmployeeInfo();
-                console.log("add an employee");
-                console.log(newEmployee);
                 await addEmployee(newEmployee);
                 break;
             }
 
             case 'Add role': {
                 const newRole = await getRoleInfo();
-                console.log("add a role");
                 await addRole(newRole);
                 break;
             }
